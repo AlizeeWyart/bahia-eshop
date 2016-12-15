@@ -1,0 +1,78 @@
+.navbar-bahia {
+  background-color: white;
+  /*padding: 30px 0;*/
+  z-index: 2;
+  position: relative;
+  width:100vw;
+  border-bottom: 1px solid #9F1723;
+}
+
+.nav > li > a {
+  padding: 0;
+}
+
+.nav > li > a:hover {
+  background-color: white;
+  font-weight:bolder;
+}
+
+.open > a:hover {
+  background-color: white;
+  border-color:none;
+}
+
+
+.open > a:focus {
+  background-color: white;
+  border-color:none;
+}
+
+
+.navbar-bahia-container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.navbar-bahia-side {
+  flex: 0 0 40%;
+  display: flex;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 35px;
+}
+
+.navbar-bahia-side a {
+  color:black;
+}
+
+.left {
+  justify-content: flex-end;
+}
+
+.left a {
+  margin-left:20px;
+}
+
+.right {
+  justify-content: flex-start;
+}
+
+.right a {
+  margin-right: 20px;
+}
+
+.logo-bahia-container {
+  flex: 0 0 8%;
+  justify-content: center;
+}
+
+.logo-bahia {
+  position: relative;
+  top: 2px;
+  width: 100%;
+  top: 21px;
+
+}

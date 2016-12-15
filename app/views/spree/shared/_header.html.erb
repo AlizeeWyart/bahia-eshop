@@ -1,0 +1,36 @@
+<!-- <header id="header" class="row" data-hook>
+  <figure id="logo" class="columns six" data-hook><#%= logo %></figure>
+  <#%= render :partial => 'spree/shared/nav_bar' %>
+  <#%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+</header> -->
+
+
+<nav class="navbar-bahia" style="border-bottom: 2px solid #9F1723">
+  <div class="container-fluid navbar-bahia-container">
+    <div class="navbar-bahia-side left hidden-sm hidden-xs">
+      <!-- Div à récupérer sur site du Wagon -->
+      <ul class="nav navbar-nav">
+        <% @taxonomies.each do |taxonomy| %>
+        <li class="dropdown">
+          <%= link_to '#', data: { toggle: "dropdown" }, "aria-haspopup" => 'true' do %>
+            <%= taxonomy.name %> <span class="caret"></span>
+          <% end %>
+          <%= nav_tree(taxonomy.root, @taxon, 1) %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="logo-bahia-container">
+      <a href="#">
+        <img class="logo-bahia" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="">
+      </a>
+    </div>
+      <div class="navbar-bahia-side right hidden-sm hidden-xs">
+        <a href="#">Artisanat</a>
+        <a href="#">Histoire</a>
+        <a href="#">Valeurs</a>
+        <a href="#">Panier</a>
+      </div>
+    </div>
+  </div>
+</nav>

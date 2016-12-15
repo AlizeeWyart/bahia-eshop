@@ -1,0 +1,70 @@
+.selection-cards {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  flex-direction:row;
+  margin-bottom:40px;
+}
+
+.title-homepage {
+  margin: 20px 0 40px 0;
+}
+
+.product-index-bahia-card {
+  flex: 0 0 20%;
+  margin: 20px;
+}
+
+.product-index-bahia-card h4 {
+  color:#7C8594;
+  font-family:'Quicksand';
+  font-size:14px;
+  margin:0;
+  padding:0;
+  text-transform: none;
+  font-weight:200;
+  text-align:left;
+}
+.product-index-bahia-card h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 8px 0 2px 0;
+  text-transform:uppercase;
+
+}
+
+.product-index-bahia-card h5 {
+  text-align: right;
+  font-size: 20px;
+  color: black;
+  opacity: 0.9;
+  font-weight: 400;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 0;
+}
+
+
+.product-square-photo {
+  height:250px;
+  width:250px;
+  background-color: #F3EAEA;
+  // background-image: url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/40e02e000576499eb312ed27a45f108b_suadiv.jpg');
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size: cover !important;
+}
+
+.text-product-card {
+  display:flex;
+  justify-content: space-between;
+}
+
+.text-left {
+  flex: 0 0 auto;
+  text-align:left;
+}
+
+.text-right {
+  flex: 0 0 auto;
+  text-align:right;
+}
